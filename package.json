@@ -6,9 +6,9 @@
     "backend"
   ],
   "scripts": {
-    "dev:frontend": "cd frontend && npm run dev",
-    "build": "cd frontend && npm run build",
-    "build:frontend": "cd frontend && npm run build",
-    "start:backend": "cd backend && node src/server.js"
+    "dev:frontend": "npm exec --workspace=frontend vite dev",
+    "build": "npm exec --workspace=frontend vite build",
+    "build:frontend": "npm exec --workspace=frontend vite build",
+    "start:backend": "npm exec --workspace=backend node src/server.js"
   }
 }
