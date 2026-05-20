@@ -21,6 +21,10 @@ io.on("connection", (socket) => {
 
 app.set("io", io);
 
+app.get("/", (req, res) => {
+  res.send("Truck Dispatch Backend is running");
+});
+
 server.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
 });
